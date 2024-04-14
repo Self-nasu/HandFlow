@@ -6,17 +6,23 @@
   --primary: #d9d9d9;
   --secondary: #1a1d26;
 
+  --shadow: 0px 1.5px 2.5px rgba(0,0,0,0.36);
+
 }
+
+/* Deffault Link <a> Tag Maker */
 
 .navlinks {
   font-family: var(--font-inter);
   text-decoration: none;
 }
+
+/* Custom btn Desgin For Website */
 .my_btn {
   background-color: var(--primary);
   padding: 0.24rem 1.8rem;
   border-radius: 2rem;
-  box-shadow: 0px 2px 3px rgba(0,0,0,0.36);
+  box-shadow: var(--shadow);
 }
 .my_btn>a {
   color: var(--secondary);

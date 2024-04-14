@@ -1,29 +1,35 @@
 /* General styling */
 body {
-    font-family: var(--font-inter) , sans-serif;
+    font-family: var(--font-inter), sans-serif;
     margin: 0;
     background-image: url('/assets/background/mainback.png');
     background-repeat: none;
     background-size: cover;
 }
+
+/* NavBar CSS For PC*/
 .navbar {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
     background-color: transparent;
 }
+
 .navbar>div {
     justify-content: center;
 }
+
 .weblogo {
     font-family: var(--font-inter);
     font-weight: bold !important;
     font-size: 1.8rem;
     color: var(--primary);
-    text-shadow: 0px 3px 3px rgba(0,0,0,0.36);
+    text-shadow: var(--shadow)
 }
+
 .weblogo:hover {
     color: var(--primary);
 }
+
 .left-bar {
     display: flex;
 }
@@ -34,12 +40,69 @@ body {
     width: 34rem;
     font-size: 1.1rem;
     align-items: center;
-    text-shadow: 0px 3px 3px rgba(0,0,0,0.36);
+    text-shadow: var(--shadow);
 }
+
 .extra-links>a {
     color: var(--primary);
 }
+.toggle-btn {
+    color: var(--secondary);
+    font-size: 1.7rem;
+    display: none;
+}
 
+.toggle-btn:hover {
+    color: var(--secondary);
+}
 
+/* Responsive CSS for Navbar */
 
+@media only screen and (max-width: 880px) {
 
+   .extra-links {
+        flex-direction: column;
+        width: auto;
+        padding: 0rem 5rem 0rem 1rem;
+        background-color: var(--primary);
+        align-items: flex-start;
+        font-size: 1.7rem;
+        text-shadow: none;
+
+   }
+   .extra-links>a {
+    color: var(--secondary);
+   }
+   .extra-links>a::after {
+    content: "";
+    background-color: black;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    position: absolute;
+    }
+   .login {
+    display: none;
+   }
+   .left-bar {
+    position: absolute;
+    top: 70px;
+    z-index: 1;
+    left: 0;
+    display: none !important;
+   }
+   .toggle-btn{
+    display: flex;
+   }
+   .navbar {
+    background-color: var(--primary);
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    box-shadow: var(--shadow);
+    z-index: 3;
+   }
+   .weblogo {
+    color: var(--secondary);
+   }
+
+}
