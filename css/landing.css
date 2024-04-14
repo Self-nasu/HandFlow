@@ -1,0 +1,22 @@
+.landing {
+    font-family: var(--font-inter);
+    color: var(--primary);
+    margin-top: 20vh;
+}
+
+.Heading {
+    display: flex;
+    flex-direction: column;
+    font-size: 4.2rem;
+    line-height: 4rem;
+    text-shadow: var(--shadow);
+}
+
+.sub-heading {
+    text-shadow: var(--shadow);
+    font-size: 1.6rem;
+}
+
+.try-now {
+    margin-top: 2.5vh;
+}
