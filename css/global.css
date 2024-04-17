@@ -38,3 +38,26 @@
   background-color: var(--primary);
   transition: background-color 0.3s linear;
 }
+
+/* Responsive */
+
+@media screen and (max-width: 426px) {
+  .my_btn {
+    background-color: var(--primary);
+    padding: 0.3rem 1.5rem;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+  .my_btn {
+    background-color: var(--primary);
+    padding: 0.25rem 1.3rem;
+  }
+  .ft-text {
+    font-size: 0.4rem;
+  }
+  .ft-icons {
+    display: none;
+  }
+}

@@ -16,7 +16,46 @@
     text-shadow: var(--shadow);
     font-size: 1.6rem;
 }
-
-.try-now {
+.btns {
     margin-top: 2.5vh;
+    display: flex;
+}
+.mobile-login {
+    margin-left: 1.2rem;
+    display: none;
+}
+
+
+/* Responsive CSss */
+
+@media screen and (max-width: 480px) {
+    .landing {
+        margin-top: 22vh;
+        padding-left: 3vh;
+    }
+    .Heading {
+        font-size: 2.8rem;
+    }
+    .sub-heading {
+        font-size: 1.2rem;
+    }
+    .mobile-login {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .landing {
+        margin-top: 22vh;
+        padding-left: 3vh;
+    }
+    .Heading {
+        font-size: 2.4rem;
+    }
+    .sub-heading {
+        font-size: 1rem;
+    }
+    .mobile-login {
+        display: block;
+    }
 }
