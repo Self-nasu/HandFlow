@@ -4,6 +4,9 @@
     margin-top: 20vh;
 }
 
+.web-logo {
+    scale: 1.3;
+}
 .Heading {
     display: flex;
     flex-direction: column;
@@ -25,6 +28,14 @@
     display: none;
 }
 
+.discrip {
+    margin-top: 1vh;
+    width: 350px;
+    font-weight: 300;
+    font-size: 0.8rem;
+    letter-spacing: 0.05rem;
+}
+
 
 /* Responsive CSss */
 
@@ -35,6 +46,8 @@
     }
     .Heading {
         font-size: 2.8rem;
+        line-height: 3rem;
+
     }
     .sub-heading {
         font-size: 1.2rem;
@@ -42,6 +55,17 @@
     .mobile-login {
         display: block;
     }
+    .discrip {
+        width: 220px;
+        font-weight: 300;
+        font-size: 0.6rem;
+        letter-spacing: 0.05rem;
+    }
+    .web-logo {
+        scale: 1.3;
+        display: none;
+    }
+    
 }
 
 @media screen and (max-width: 320px) {
