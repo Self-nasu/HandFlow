@@ -1,7 +1,5 @@
 * { margin:0; padding:0; }
 
-html, body { } /* just to be sure these are full screen*/
-
 canvas { 
    overflow: hidden;
    top: -40px;
