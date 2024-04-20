@@ -1,0 +1,20 @@
+.web-cam {
+    display: flex;
+}
+.webholder {
+    width: 40rem;
+}
+
+#webcam {
+    height: 69vh;
+    width: 39.4rem;
+}
+
+#output_canvas {
+    height: 69vh;
+    width: 39.4rem;
+    position: absolute;
+    top: 0px;
+    left: 18px;
+}
+

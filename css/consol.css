@@ -1,0 +1,61 @@
+body {
+    background-color: var(--secondary);
+}
+.web-main {
+    margin-top: 15vh;
+}
+.consol {
+    display: contents;
+}
+.holder {
+    height: 70vh;
+    width: 25rem;
+    background-color: black;
+    border: 5px solid var(--primary);
+}
+.heading {
+    color: var(--secondary);
+    background-color: var(--primary);
+    padding: 0.5rem;
+    font-size: 1.4rem;
+    text-align: center;
+}
+.consol-area {
+    height: 55.5vh;
+}
+.consol-area>div {
+    color: var(--primary);
+    padding-left: 2rem;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    font-family: consolas;
+}
+.consol-btn {
+    color: var(--secondary);
+    background-color: var(--primary);
+    padding: 0.5rem;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+}
+.consol-btn:hover {
+    cursor: pointer;
+}
+#field {
+    display: none;
+    opacity: 0.8;
+}
+#field2 {
+    opacity: 0.8;
+    display: none;
+}
+#field3 {
+    opacity: 0.8;
+    display: none;
+}
+#indicator {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
