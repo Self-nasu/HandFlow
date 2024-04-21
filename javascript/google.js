@@ -22,7 +22,7 @@ let musicPlaying = false;
 let audio;
 
 // ================= Model Selector ===========================
-var selectedModelName = 'HandFlow'; // change model name here to select other model
+var selectedModelName = 'HandFlow3'; // change model name here to select other model
 
 // =================================================================================================================================
 //                                                  Gesture Recognizer Intislizer
@@ -138,6 +138,7 @@ function handleGesture(gesture) {
         indicator.innerText = "Now recoding gestures";
         console.log('started listening');
         gestureData = {}; // Initialize gestureData with an empty object
+        // gestureData.command = {};
     } else if (gestureData !== null) {
         if (["device_fan", "device_1", "device_2", "device_3"].includes(gesture)) {
             gestureData.device = gesture;
