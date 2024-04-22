@@ -7,7 +7,7 @@ body {
 .consol {
     display: contents;
 }
-.holder {
+.holder-con {
     height: 70vh;
     width: 25rem;
     background-color: black;
@@ -22,7 +22,7 @@ body {
     text-align: center;
 }
 .consol-area {
-    height: 55vh;
+    height: 55.05vh;
 }
 .consol-area>div {
     color: var(--primary);
@@ -59,4 +59,13 @@ body {
     color: white;
     text-align: center;
     padding: 5px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 480px) {
+    .consol {
+        display: none;
+    }
+
 }

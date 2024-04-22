@@ -1,10 +1,15 @@
 .web-cam {
     display: flex;
 }
+.holder {
+    height: 70vh;
+    width: 25rem;
+    background-color: black;
+    border: 5px solid var(--primary);
+}
 .webholder {
     width: 40rem;
 }
-
 #webcam {
     height: 68.7vh;
     width: 39.4rem;
@@ -17,4 +22,64 @@
     top: 0px;
     left: 18px;
 }
+.hide-pc {
+    display: none;
+}
 
+/* responsive */
+
+@media screen and (max-width: 376px) {
+    .webholder {
+        width: 21.5rem;
+    }
+    #webcam {
+        width: 20.9rem;
+    }
+    #output_canvas {
+        width: 20.9rem;
+        left: 20px;
+        top:5px;
+    }
+    .web-cam {
+        display: flex;
+        flex-direction: column;
+    }
+    .hide-pc {
+        display: block;
+    }
+    .consol-btn {
+        width: 21.5rem;
+        text-align: center;
+    }
+    .web-main {
+        margin-top: 12vh;
+    }
+}
+
+@media screen and (min-width: 378px) and (max-width: 426px) {
+    .webholder {
+        width: 24.5rem;
+    }
+    #webcam {
+        width: 23.9rem;
+    }
+    #output_canvas {
+        width: 23.9rem;
+        left: 20px;
+        top:5px;
+    }
+    .web-cam {
+        display: flex;
+        flex-direction: column;
+    }
+    .hide-pc {
+        display: block;
+    }
+    .consol-btn {
+        width: 24.5rem;
+        text-align: center;
+    }
+    .web-main {
+        margin-top: 12vh;
+    }
+}
