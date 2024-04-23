@@ -22,7 +22,7 @@ let musicPlaying = false;
 let audio;
 
 // ================= Model Selector ===========================
-var selectedModelName = 'HandFlow3'; // change model name here to select other model
+var selectedModelName = 'HandFlow4'; // change model name here to select other model
 
 // =================================================================================================================================
 //                                                  Gesture Recognizer Intislizer
