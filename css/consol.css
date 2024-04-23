@@ -64,8 +64,21 @@ body {
 /* Responsive */
 
 @media screen and (max-width: 480px) {
-    .consol {
+    .holder-con>.heading {
         display: none;
     }
-
+    .holder-con>.consol-area {
+        display: none;
+    }
+    .holder-con {
+        height: auto;
+        width: 10%;
+        border: 0;
+    }
+    .consol-btn {
+        padding: 0.2rem;
+    }
+    .col {
+        display: block;
+    }
 }

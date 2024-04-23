@@ -28,7 +28,38 @@
 
 /* responsive */
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 320px) {
+    .webholder {
+        width: 18rem;
+    }
+    #webcam {
+        width: 17.4rem;
+    }
+    #output_canvas {
+        width: 17.4rem;
+        left: 20px;
+        top:5px;
+    }
+    .web-cam {
+        display: flex;
+        flex-direction: column;
+    }
+    .hide-pc {
+        display: block;
+    }
+    .consol-btn {
+        width: 18rem;
+        text-align: center;
+    }
+    .web-main {
+        margin-top: 12vh;
+    }
+    footer {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 376px) {
     .webholder {
         width: 21.5rem;
     }
