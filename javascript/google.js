@@ -2,8 +2,14 @@
 //                                                  Models Importing
 // ================================================================================================================================
 
-import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.10.0/firebase-app.js';
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-analytics.js";
+// import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.10.0/firebase-app.js';
+// import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-analytics.js";
+// import { getDatabase, ref, set } from 'https://www.gstatic.com/firebasejs/10.10.0/firebase-database.js';
+// import { GestureRecognizer, FilesetResolver, DrawingUtils } from "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.3";
+
+
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.2.0/firebase-app.js';
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.2.0/firebase-analytics.js";
 import { getDatabase, ref, set } from 'https://www.gstatic.com/firebasejs/10.10.0/firebase-database.js';
 import { GestureRecognizer, FilesetResolver, DrawingUtils } from "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.3";
 
