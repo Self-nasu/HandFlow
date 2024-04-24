@@ -21,9 +21,6 @@ let isListening = false;
 let musicPlaying = false;
 let audio;
 
-// ================= Model Selector ===========================
-var selectedModelName = "HandFlow4"; // change model name here to select other model
-
 // =================================================================================================================================
 //                                                  Gesture Recognizer Intislizer
 // =================================================================================================================================
@@ -32,7 +29,7 @@ const createGestureRecognizer = async () => {
     const vision = await FilesetResolver.forVisionTasks("https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.3/wasm");
     gestureRecognizer = await GestureRecognizer.createFromOptions(vision, {
         baseOptions: {
-            modelAssetPath: "/javascript/" + selectedModelName +".task",
+            modelAssetPath: "./model/HandFlow4.task",
             delegate: "GPU"
         },
         runningMode: runningMode
