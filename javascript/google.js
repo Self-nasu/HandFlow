@@ -18,8 +18,6 @@ let enableWebcamButton;
 let webcamRunning = false;
 let gestureData = null;
 let isListening = false;
-let musicPlaying = false;
-let audio;
 
 // =================================================================================================================================
 //                                                  Gesture Recognizer Intislizer
@@ -44,8 +42,6 @@ createGestureRecognizer();
 
 const video = document.getElementById("webcam");
 const canvasElement = document.getElementById("output_canvas");
-
-
 const canvasCtx = canvasElement.getContext("2d");
 
 // output screen for consol
@@ -68,8 +64,8 @@ function hasGetUserMedia() {
 // wants to activate it.
 
 if (hasGetUserMedia()) {
-    enableWebcamButton = document.getElementById("webcamButton");
-    enableWebcamButton.addEventListener("click", enableCam);
+    enableWebcamButton = document.getElementById("webcamButton");  
+    enableWebcamButton.addEventListener("click", enableCam); 
 }
 else {
     console.warn("getUserMedia() is not supported by your browser");
@@ -222,3 +218,12 @@ async function predictWebcam() {
         handleGesture(gesture);
     }
 }
+
+
+// =================================================================================================================================
+//                                                M-Remote Handler
+// =================================================================================================================================
+
+
+
+

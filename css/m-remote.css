@@ -1,0 +1,34 @@
+body {
+    background-color: var(--secondary);
+}
+
+.m-remote {
+    margin-top: 12vh;
+}
+
+.card {
+    width: 12rem;
+    text-align: center;
+    padding: 0.3rem;
+    border: 2px solid var(--primary-light);
+    border-radius: 12%;
+    box-shadow: 4px 11px 28px 3px rgba(0,0,0,0.1);
+    background-color: transparent;
+    color: var(--primary);
+    margin-top: 2vh;
+}
+.card-active {
+    border-color: var(--primary);
+    box-shadow: 0px 0px 20px 0px var(--primary-light);
+}
+.card-text {
+    font-size: xx-large;
+    color: #eeeeee7c;
+}
+
+.device-btn {
+    background-color: var(--primary);
+    color: var(--secondary) !important;
+    padding: 0.4rem 2.5rem;
+    width: 8.8rem;
+}
