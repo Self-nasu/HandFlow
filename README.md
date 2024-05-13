@@ -15,15 +15,12 @@ a web interface to control devices through hand gestures.
 - [@tarang_srivas](https://www.instagram.com/tarang_srivas/)
 
 ## Prototype Testing
-<div style="text-align: center; display: flex;">
 
 <img src="https://github.com/Self-nasu/HandFlow/blob/main/testing/prototypeimg.jpg" width="60%" height="auto">
 
 <img src="https://github.com/Self-nasu/HandFlow/blob/main/testing/test1.jpg" width="60%" height="auto">
 
 <img src="https://github.com/Self-nasu/HandFlow/blob/main/testing/test2.jpg" width="60%" height="auto">
-
-</div>
 
 ## Full Prototype testing Video are avaliable at
 
@@ -56,3 +53,26 @@ a web interface to control devices through hand gestures.
 - These gestures alter the level setting of the selected device from its previous state to the corresponding level.
 - However, these gestures have no effect on devices lacking level settings.
 
+
+## Training Data Set
+
+For our HandFlow Model training, we curated a dataset comprising over 4000 images. Each gesture category consists of a minimum of 250-300 images, with the remaining images representing the absence of a gesture (None gesture). The dataset's creation and curation were primarily conducted by:
+
+- [@self-yash](https://www.github.com/self-yash) - BTech CSE - AI/ML
+- [@self-puneet](https://www.github.com/self-puneet) - BTech CSE - AI/ML
+## Our Custom HandFlow Model & Web Application
+
+We developed a custom model for hand gesture detection using the transfer learning concept. Leveraging the Google Media-pipe hand Landmark Detection model as our foundation, we retrained it with our dataset of gesture images. This approach resulted in achieving significantly improved accuracy for video-based hand gesture detection.
+
+Our choice of utilizing the Google Media-pipe hand landmark detection model stemmed from its stability and ease of deployment in the current market scenario. This ensures seamless integration into our web application or any other desired platform.
+
+The primary architect behind the model training and development of the web application was:
+
+- [@self-nasu](https://www.github.com/self-nasu) - BCA || MCA - AI/ML
+- [LinkedIn - self-nasu](https://www.linkedin.com/in/nasu1708/)
+
+## Hardware Design
+
+The success of our project hinged on the seamless integration of hardware components. We orchestrated an impressive fusion of Firebase service with the cost-effective ESP32, enabling us to harness gesture data for home automation purposes. Additionally, the prototype crafted by [@tarang_srivas](https://www.instagram.com/tarang_srivas/) underwent rigorous testing, ensuring its functionality and reliability. Moreover, we handcrafted the PCB (Printed Circuit Board) tailored specifically for this project, further enhancing its efficiency and performance. This intricate hardware design, orchestrated by Tarang Srivas, played a pivotal role in bringing our vision to fruition.
+
+- [@tarang_srivas](https://www.instagram.com/tarang_srivas/) - BTech ECE
