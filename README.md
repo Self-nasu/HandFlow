@@ -15,12 +15,15 @@ a web interface to control devices through hand gestures.
 - [@tarang_srivas](https://www.instagram.com/tarang_srivas/)
 
 ## Prototype Testing
+<div style="text-align: center; display: flex;">
 
 <img src="https://github.com/Self-nasu/HandFlow/blob/main/testing/prototypeimg.jpg" width="60%" height="auto">
 
 <img src="https://github.com/Self-nasu/HandFlow/blob/main/testing/test1.jpg" width="60%" height="auto">
 
 <img src="https://github.com/Self-nasu/HandFlow/blob/main/testing/test2.jpg" width="60%" height="auto">
+
+</div>
 
 ## Full Prototype testing Video are avaliable at
 
