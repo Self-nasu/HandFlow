@@ -13,6 +13,7 @@ import { getDatabase, ref, set } from 'https://www.gstatic.com/firebasejs/10.10.
 let enabledevice1;
 let enabledevice2;
 let enabledevice3;
+let enabledevicefan;
 let remote_status = false;
 // device 1
 let device1_status = false;
@@ -26,6 +27,10 @@ let device2_card = document.getElementById("device2-card");
 let device3_status = false;
 let device3_icon = document.getElementById("m-device3-icon");
 let device3_card = document.getElementById("device3-card");
+// device fan
+let devicefan_status = false;
+let devicefan_icon = document.getElementById("m-devicefan-icon");
+let devicefan_card = document.getElementById("devicefan-card");
 
 if (remote_status == false) {
     enabledevice1 = document.getElementById("m-device1-btn");
@@ -37,6 +42,8 @@ if (remote_status == false) {
     enabledevice3 = document.getElementById("m-device3-btn");
     enabledevice3.addEventListener("click", device3_work);
 
+    enabledevicefan = document.getElementById("m-devicefan-btn");
+    enabledevicefan.addEventListener("click", devicefan_work);
     remote_status = true
 }
 else {
@@ -134,5 +141,28 @@ function device3_work(event) {
         enabledevice3.innerText = "Turn On ";
         device3_card.classList.remove("card-active");
         device3_icon.innerHTML = '<i class="bi bi-lightbulb"></i>';
+    }
+}
+
+function devicefan_work(event) {
+    if (devicefan_status == false) {
+        gestureData.device = "device_fan";
+        gestureData.level = "5";
+        gestureData.command = "on";
+        set(gestureDataRef, gestureData);
+        devicefan_status = true;
+        enabledevicefan.innerText = "Turn Off";
+        devicefan_card.classList.add("card-active");
+        devicefan_icon.innerHTML = '<i class="bi bi-lightbulb-fill"  style="color: yellow !important;"></i>';
+    }
+    else {
+        gestureData.device = "device_fan";
+        gestureData.level = "0";
+        gestureData.command = "off";
+        set(gestureDataRef, gestureData);
+        devicefan_status = false;
+        enabledevicefan.innerText = "Turn On ";
+        devicefan_card.classList.remove("card-active");
+        devicefan_icon.innerHTML = '<i class="bi bi-lightbulb"></i>';
     }
 }
