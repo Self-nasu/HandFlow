@@ -32,3 +32,29 @@ body {
     padding: 0.4rem 2.5rem;
     width: 8.8rem;
 }
+
+.device {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 767px) {
+    .device {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .card {
+        width: auto;
+        text-align: center;
+        padding: 0.1rem;
+        border: 2px solid var(--primary-light);
+        border-radius: 12%;
+        box-shadow: 4px 11px 28px 3px rgba(0,0,0,0.1);
+        background-color: transparent;
+        color: var(--primary);
+    }
+    .card-body {
+        padding: 15px;
+    }
+}
