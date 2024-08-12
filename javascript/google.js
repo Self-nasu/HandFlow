@@ -27,7 +27,7 @@ const createGestureRecognizer = async () => {
     const vision = await FilesetResolver.forVisionTasks("https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.3/wasm");
     gestureRecognizer = await GestureRecognizer.createFromOptions(vision, {
         baseOptions: {
-            modelAssetPath: "./model/HandFlow4.task",
+            modelAssetPath: "./model/HandFlow2.task",
             delegate: "GPU"
         },
         runningMode: runningMode
